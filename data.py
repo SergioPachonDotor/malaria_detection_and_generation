@@ -19,16 +19,16 @@ class FLAGS(object):
         self.save_every_epoch = 10 # "The interval of saveing checkpoints.")
         # self.dataset = "celebA" # "The name of dataset [celebA, mnist, lsun]")
         self.checkpoint_dir = "checkpoint" # "Directory name to save the checkpoints [checkpoint]")
-        self.sample_dir = "samples" # "Directory name to save the image samples [samples]")
+        self.sample_dir = "samples2" # "Directory name to save the image samples [samples]")
         assert np.sqrt(self.sample_size) % 1 == 0., 'Flag `sample_size` needs to be a perfect square'
 flags = FLAGS()
 
 tl.files.exists_or_mkdir(flags.checkpoint_dir) # save model
 tl.files.exists_or_mkdir(flags.sample_dir) # save generated image
 
-def get_celebA(output_size, n_epoch, batch_size):
+def get_data(output_size, n_epoch, batch_size):
     # dataset API and augmentation
-    images_path = tl.files.load_file_list(path='/content/train/', regx='.*.jpg', keep_prefix=True, printable=False)
+    images_path = tl.files.load_file_list(path='Parasitized/', regx='^C33', keep_prefix=True, printable=False)
     def generator_train():
         for image_path in images_path:
             yield image_path.encode('utf-8')

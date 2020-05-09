@@ -4,7 +4,7 @@ import numpy as np
 import tensorflow as tf
 import tensorlayer as tl
 from glob import glob
-from data import get_celebA, flags
+from data import get_data, flags
 from model import get_generator, get_discriminator
 
 num_tiles = int(np.sqrt(flags.sample_size))
