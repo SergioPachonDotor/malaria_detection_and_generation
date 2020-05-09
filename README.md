@@ -7,7 +7,7 @@ This code is reffered to the article
  
 ~~~~ 
 @article{Ramarolahy2020blood,
-  title={Blood and bone marrow changes in malaria},
+  title={A comprehensive Neural networks use for Malaria},
   author={Ramarolahy, R  and Opoku, E and Crimi, A},
   journal={ },
   volume={},
