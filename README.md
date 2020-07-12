@@ -29,7 +29,12 @@ In this code we used two datasets.
 -The first data contains individual cells from https://ceb.nlm.nih.gov/repositories/malaria-datasets/.
 -The second contains thick smear image from http://air.ug/microscopy/.
 
-We created a CNN model and decided to train on both datasets.
+We created a CNN model and decided to train on both datasets, the architecture can be seen below:
+<p align="center">
+  <img src="discriminator.png" width="640" alt="generated staining">
+</p>
+
+
 If you want to train by yourself, make sure that you have the datasets, and you can decide which data should you train. 
 You can run *main.py* in the terminal and add the directory of the data that you want to train.
 For example: *python3 main.py './cell_images'* 
@@ -49,7 +54,11 @@ NB: -You need some image of thin smear and thick smear for the second part of th
 For thin smear, you can try this https://drive.google.com/drive/folders/1EMJ7dg0TBs34sDWcj7Tj1wozXJC0wtbc
 
 *********************************************************************************************************************
- 2. Generation of microscopy images using Generative Adversial Networks. 
+ 2. Generation of microscopy images using Generative Adversial Networks (GANs). 
+ This code create synthetic images of infected red blood cells by using GANs. The architecture can be seen below:
+<p align="center">
+  <img src="GAB.png" width="640" alt="generated staining">
+</p>
 
 The idea is to run a GAN architecture with minimal data available
 <p align="center">
