@@ -31,7 +31,7 @@ In this code we used two datasets.
 
 We created a CNN model and decided to train on both datasets, the architecture can be seen below:
 <p align="center">
-  <img src="discriminator.png" width="640" alt="generated staining">
+  <img src="discriminator.png" width="640" alt="Classifier architecture">
 </p>
 
 
@@ -57,7 +57,7 @@ For thin smear, you can try this https://drive.google.com/drive/folders/1EMJ7dg0
  2. Generation of microscopy images using Generative Adversial Networks (GANs). 
  This code create synthetic images of infected red blood cells by using GANs. The architecture can be seen below:
 <p align="center">
-  <img src="GAB.png" width="640" alt="generated staining">
+  <img src="GAN.png" width="640" alt="GAN architecture">
 </p>
 
 The idea is to run a GAN architecture with minimal data available
